@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="aMAMBfjY7AM8rG-Xc7aDbp1q5tWXdyVblpzYCydkqqQ" />  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore BitLife gameplay, career choices, character development, money management, MOD APK features, Android compatibility, and practical gaming tips.">
+  <meta name="keywords" content="BitLife MOD APK, BitLife life simulator, BitLife Android game, BitLife God Mode, Bitizenship, BitLife gameplay tips">
+  <title>BitLife Life Simulator: Features, Careers and Android Tips</title>
+  <style>
+    :root {
+      --orange: #f02b08;
+      --orange-dark: #d92100;
+      --ink: #20243a;
+      --muted: #5b6174;
+      --surface: #ffffff;
+      --page: #f5f7fb;
+      --line: #e7eaf2;
+      --radius: 18px;
+      --shadow: 0 12px 34px rgba(28, 35, 70, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.75;
+    }
+    a { color: inherit; }
+    .site-header {
+      position: sticky; top: 0; z-index: 20;
+      background: var(--orange);
+      color: white;
+      box-shadow: 0 4px 18px rgba(0,0,0,.14);
+    }
+    .nav-wrap {
+      max-width: 1280px; min-height: 78px; margin: auto; padding: 10px 28px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; min-width: 0; }
+    .brand-mark {
+      width: 58px; height: 58px; border-radius: 15px; flex: 0 0 auto;
+      display: grid; place-items: center; background: linear-gradient(145deg,#ff6a2b,#e51c00);
+      border: 2px solid rgba(255,255,255,.6); box-shadow: inset 0 0 0 2px rgba(255,255,255,.12);
+      font-size: 28px; line-height: 1;
+    }
+    .brand-name { font-size: clamp(18px, 2vw, 25px); font-weight: 850; font-style: italic; letter-spacing: -.5px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { text-decoration: none; font-weight: 750; font-style: italic; white-space: nowrap; }
+    .nav-links a:hover, .nav-links a:focus { text-decoration: underline; text-underline-offset: 6px; }
+    .menu-toggle { display: none; border: 1px solid rgba(255,255,255,.55); background: transparent; color: white; border-radius: 10px; padding: 9px 12px; font-size: 22px; cursor: pointer; }
+    .hero {
+      overflow: hidden; position: relative; color: white;
+      background:
+        radial-gradient(ellipse at 4% -15%, #ffe000 0 10%, transparent 10.3%),
+        radial-gradient(ellipse at 99% 110%, #ff7b00 0 16%, transparent 16.4%),
+        radial-gradient(ellipse at 90% 0%, #00a9f4 0 17%, transparent 17.4%),
+        linear-gradient(112deg, #ff8500 0%, #ff3b16 25%, #d91c67 47%, #1738b9 70%, #005ce6 100%);
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; width: 340px; height: 150px; border-radius: 50%;
+      background: #ffd600; opacity: .95; transform: rotate(-28deg); pointer-events: none;
+    }
+    .hero::before { left: -110px; top: -95px; }
+    .hero::after { right: -100px; bottom: -110px; background: #ff3b10; }
+    .hero-inner {
+      position: relative; z-index: 1; max-width: 1280px; margin: auto; padding: 66px 28px 58px;
+      display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(230px, .8fr); gap: 40px; align-items: center;
+    }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; font-size: 12px; background: rgba(255,255,255,.17); border: 1px solid rgba(255,255,255,.35); border-radius: 99px; padding: 7px 12px; }
+    h1 { font-size: clamp(34px, 4.4vw, 58px); line-height: 1.17; letter-spacing: -1.8px; margin: 18px 0 24px; max-width: 850px; }
+    .hero p { font-size: 16px; max-width: 790px; margin: 0 0 16px; color: rgba(255,255,255,.97); }
+    .hero-actions { margin: 28px 0 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 23px; border: 2px solid white; border-radius: 11px; background: #f02b08; color: white; text-decoration: none; font-weight: 850; font-size: 17px; box-shadow: 0 8px 20px rgba(90,0,0,.14); transition: transform .2s, background .2s; }
+    .btn:hover { transform: translateY(-2px); background: #d92300; }
+    .hero-art { display: flex; justify-content: center; align-items: center; }
+    .app-icon {
+      width: min(300px, 100%); aspect-ratio: 1; border-radius: 24%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; background: linear-gradient(145deg,#ff5725,#f02200);
+      border: 5px solid rgba(255,255,255,.22); box-shadow: 0 25px 60px rgba(0,0,0,.2), inset 0 0 0 2px rgba(255,255,255,.12);
+      transform: rotate(2deg); text-align: center;
+    }
+    .app-icon .sperm { font-size: clamp(70px, 8vw, 110px); line-height: 1; filter: drop-shadow(0 4px 1px rgba(0,0,0,.13)); }
+    .app-icon strong { color: #ffe94c; font-size: clamp(27px, 3vw, 39px); font-weight: 1000; letter-spacing: -1px; text-shadow: 0 3px 0 #b84d00; }
+    .hero-note { font-size: 13px !important; opacity: .9; }
+    .layout { max-width: 1180px; margin: 44px auto 70px; padding: 0 24px; display: grid; grid-template-columns: minmax(0, 1fr) 285px; gap: 28px; align-items: start; }
+    .article-card, .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .article-card { padding: clamp(24px, 4vw, 48px); min-width: 0; }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; color: var(--muted); font-size: 13px; margin-bottom: 25px; }
+    .pill { background: #fff0eb; color: #c92c0a; border-radius: 99px; padding: 5px 10px; font-weight: 800; }
+    .article-card h2 { font-size: clamp(24px, 2.5vw, 31px); line-height: 1.3; letter-spacing: -.7px; margin: 40px 0 13px; }
+    .article-card h2:first-of-type { margin-top: 0; }
+    .article-card p { color: #4a5064; margin: 0 0 18px; }
+    .article-card strong { color: #252a40; }
+    .article-card a { color: #e72d0b; font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .article-card a:hover { color: #ad1e00; }
+    .toc { padding: 22px; margin-bottom: 26px; background: #fff8f5; border: 1px solid #ffddd3; border-radius: 14px; }
+    .toc h2 { margin: 0 0 10px !important; font-size: 18px !important; }
+    .toc ol { margin: 0; padding-left: 22px; }
+    .toc li { margin: 4px 0; color: var(--muted); }
+    .toc a { text-decoration: none; font-weight: 650; }
+    .tip-box { margin: 24px 0; padding: 18px 20px; background: #f2f6ff; border-left: 4px solid #275be7; border-radius: 10px; color: #3e4863; }
+    .sidebar { display: grid; gap: 20px; position: sticky; top: 100px; }
+    .sidebar-card { padding: 23px; }
+    .sidebar-card h3 { margin: 0 0 13px; font-size: 18px; }
+    .sidebar-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .sidebar-card ul { margin: 0; padding-left: 19px; color: var(--muted); }
+    .sidebar-card li { margin: 7px 0; font-size: 14px; }
+    .mini-cta { display: block; margin-top: 17px; background: var(--orange); color: white !important; padding: 11px 14px; border-radius: 9px; text-align: center; text-decoration: none; font-weight: 800; }
+    .site-footer { background: #171a2b; color: #d8dbea; padding: 42px 24px 22px; }
+    .footer-inner { max-width: 1180px; margin: auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 36px; }
+    .footer-brand { color: white; font-size: 22px; font-weight: 850; font-style: italic; margin-bottom: 12px; }
+    .site-footer p { color: #aeb4ca; margin: 0; font-size: 14px; max-width: 430px; }
+    .site-footer h3 { color: white; margin: 0 0 12px; font-size: 15px; }
+    .footer-links { display: grid; gap: 8px; }
+    .footer-links a { color: #cbd0e1; text-decoration: none; font-size: 14px; }
+    .footer-links a:hover { color: white; text-decoration: underline; }
+    .copyright { max-width: 1180px; margin: 30px auto 0; padding-top: 18px; border-top: 1px solid #34384d; color: #9da4bb; font-size: 12px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 900px) {
+      .nav-wrap { padding: 10px 20px; }
+      .menu-toggle { display: block; }
+      .nav-links { display: none; position: absolute; left: 0; right: 0; top: 78px; padding: 18px 24px 22px; background: var(--orange-dark); flex-direction: column; align-items: flex-start; gap: 15px; box-shadow: 0 12px 18px rgba(0,0,0,.12); }
+      .nav-links.open { display: flex; }
+      .hero-inner { grid-template-columns: minmax(0, 1fr) 210px; gap: 22px; padding-top: 48px; }
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      .nav-wrap { min-height: 70px; padding: 8px 15px; }
+      .brand-mark { width: 47px; height: 47px; font-size: 23px; }
+      .brand { gap: 10px; }
+      .brand-name { font-size: 17px; }
+      .nav-links { top: 70px; }
+      .hero-inner { grid-template-columns: 1fr; padding: 39px 20px 38px; }
+      h1 { font-size: 36px; letter-spacing: -1.2px; }
+      .hero-art { display: none; }
+      .hero p { font-size: 15px; }
+      .btn { width: 100%; }
+      .layout { margin-top: 25px; padding: 0 14px; }
+      .article-card { padding: 23px 19px; }
+      .article-card h2 { margin-top: 32px; }
+      .sidebar { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#" aria-label="BitLife MOD APK home">
+        <span class="brand-mark" aria-hidden="true">🧬</span>
+        <span class="brand-name">BitLife MOD APK</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#official-vs-mod">Old Version</a>
+        <a href="#features">BitLife Br</a>
+        <a href="#article">Blog</a>
+        <a href="#footer">DMCA Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Life Simulation • Android Guide</span>
+        <h1>BitLife Life Simulator: Features, Careers and Android Tips</h1>
+        <div class="hero-actions">
+          <a class="btn" href="https://thebitlifemodapks.com/">↓ &nbsp; Explore BitLife MOD APK</a>
+        </div>
+        <p>Explore the choices, careers, relationships, and challenges that make BitLife an engaging life simulation game. Learn about commonly advertised MOD features and what to consider before installing an Android APK.</p>
+        <p class="hero-note">A practical overview for players who want to understand gameplay, compatibility, and safer app-installation habits.</p>
+      </div>
+      <div class="hero-art" aria-label="BitLife-style app illustration">
+        <div class="app-icon"><span class="sperm" aria-hidden="true">〰</span><strong>BitLife</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="layout" id="article">
+    <article class="article-card">
+      <div class="article-meta"><span class="pill">Gaming Guide</span><span>•</span><span>Android</span><span>•</span><span>Life Simulation</span></div>
+      <div class="toc">
+      <h2 id="introduction">Introduction to BitLife Life Simulator</h2>
+      <p>Life simulation games allow players to experience different situations, make personal decisions, and explore alternative life paths in a virtual environment. BitLife is a popular example of this genre, giving players the opportunity to guide a character from birth through childhood, education, relationships, career development, and old age. Every decision can influence how the character's story unfolds.</p>
+      <p>Players can pursue professional success, build relationships, accumulate wealth, become famous, or experience unexpected events. This freedom makes each playthrough different and encourages players to experiment with new strategies. Android users interested in learning about available game versions and features can explore <a href="https://thebitlifemodapks.com/">https://thebitlifemodapks.com/</a>
+ to understand the options commonly associated with modified editions.</p>
+
+      <h2 id="why-bitlife">What Makes BitLife an Interesting Simulation Game?</h2>
+      <p>Unlike traditional games that follow a fixed storyline, BitLife focuses on decisions and their consequences. Players are presented with different choices throughout a character's life, and these choices can affect education, employment, finances, relationships, and overall happiness.</p>
+      <p>For example, studying consistently may improve educational opportunities, while selecting an appropriate career can increase long-term income. Personal relationships also influence the character's experiences, making it important to consider family, friendships, and romantic decisions.</p>
+      <p>The combination of everyday situations and unexpected events creates a flexible gaming experience. Players can follow a realistic lifestyle or experiment with unusual scenarios simply to see what happens next.</p>
+
+      <h2 id="careers">Exploring Different Career Opportunities</h2>
+      <p>Career progression is an important part of BitLife because professional choices can shape a character's financial position and lifestyle. Players may explore various occupations depending on their character's education, skills, qualifications, and other requirements.</p>
+      <p>Some players prefer conventional careers that provide steady income and long-term stability. Others aim for prestigious professions, entertainment opportunities, or business success. Each path requires different decisions, so understanding the relevant requirements can make progression easier.</p>
+      <p>A useful strategy is to consider career goals early. Maintaining good academic performance and developing the necessary qualifications may improve access to desirable opportunities. Players should also pay attention to job requirements rather than assuming that every profession will be available immediately.</p>
+
+      <h2 id="wealth">Building Wealth and Managing Money</h2>
+      <p>Financial management adds another layer of strategy to the game. A character's income, spending habits, property decisions, and career progression can determine whether they accumulate wealth or experience financial difficulties.</p>
+      <p>Players who want to build a wealthy character should focus on increasing income while controlling unnecessary expenses. Choosing suitable employment, pursuing business opportunities when available, and making careful property decisions can support long-term financial growth.</p>
+      <p>Luxury purchases may be entertaining, but spending too much too early can limit future options. A balanced approach allows players to enjoy the game's activities while maintaining enough resources for important decisions.</p>
+      <p>Some modified versions advertise additional financial advantages, such as unlimited money. However, available features can vary by build, and advertised modifications should not be assumed to work identically across every release.</p>
+
+      <h2 id="attributes">Understanding Character Attributes and Personal Development</h2>
+      <p>Character attributes can influence different aspects of gameplay. Health, happiness, intelligence, and appearance are among the characteristics players may encounter while developing their virtual lives.</p>
+      <p>Maintaining good health can help a character navigate life events, while intelligence may be relevant to education and certain professional opportunities. Happiness and relationships can contribute to a more satisfying virtual lifestyle.</p>
+      <p>Players should consider their objectives before making decisions. Someone pursuing academic achievement may prioritize education, while another player interested in entertainment may focus on opportunities related to fame and public recognition.</p>
+      <p>Experimenting with different combinations can reveal how character development affects later outcomes. This approach also makes repeated playthroughs more interesting.</p>
+
+      <h2 id="relationships">Relationships, Family, and Social Decisions</h2>
+      <p>Relationships are another major part of the BitLife experience. Characters can form friendships, develop romantic relationships, get married, raise children, and interact with family members throughout their lives.</p>
+      <p>These choices can create rewarding experiences as well as unexpected complications. Maintaining positive relationships often requires thoughtful decisions, while neglecting important connections may affect the character's personal story.</p>
+      <p>Players can explore different lifestyles by making contrasting relationship choices in separate playthroughs. One character might focus on family and stability, while another might prioritize independence, travel, or professional ambition.</p>
+      <p>This variety helps demonstrate how personal decisions can produce different outcomes even when characters begin with similar circumstances.</p>
+
+      <h2 id="features">Understanding BitLife MOD APK Features</h2>
+      <p>Modified Android applications are often discussed because they may advertise features that differ from those available in the standard game. Depending on the specific build, these claims can include premium content access, additional customization options, or reduced restrictions.</p>
+      <p>God Mode is commonly associated with greater control over certain character characteristics and personal details. Bitizenship is another frequently searched feature because players want to understand the premium options associated with the game.</p>
+      <p>Some modified releases also advertise unlimited money, expansion packs, additional career choices, or fewer advertisements. However, these features are not guaranteed. A modification may be incomplete, outdated, incompatible with the installed game, or unable to provide every advertised benefit.</p>
+      <div class="tip-box"><strong>Important:</strong> Before considering any modified application, examine its version information, compatibility details, permissions, and source. Features advertised by a third-party build may not be verified.</div>
+      <p>The standard game remains an alternative for those who prefer official updates and support.</p>
+
+      <h2 id="official-vs-mod">Official BitLife vs. Modified Versions</h2>
+      <p>The official version and modified editions may offer different experiences depending on the features available in a particular release.</p>
+      <p>The official application generally provides access through supported distribution channels, with updates and features managed by its developer. Players can check the official listing for current availability, supported devices, and purchase requirements.</p>
+      <p>Modified versions may advertise additional access or gameplay adjustments. Nevertheless, they can involve trade-offs, including delayed updates, installation conflicts, missing features, or security concerns.</p>
+      <p>Another important consideration is saved progress. Changing application versions can sometimes affect stored game data, particularly when packages are incompatible. Players who value their existing characters should understand the potential consequences before switching versions.</p>
+      <p>Comparing these factors helps users make informed decisions instead of relying exclusively on promotional claims.</p>
+
+      <h2 id="compatibility">Android Compatibility and Installation Considerations</h2>
+      <p>Compatibility is important when installing Android applications. An APK intended for one device or software environment may not work correctly on another. Available storage, Android version requirements, processor architecture, and application-package compatibility can all influence installation.</p>
+      <p>Modified APK files also require additional caution because their contents may differ from the original application. Files from unverified sources can expose devices to unwanted software, excessive permissions, or privacy risks.</p>
+      <p>Android security warnings should not be ignored simply to complete an installation. Whenever possible, use official distribution channels and verify the source of any file before opening it.</p>
+      <p>Players should also avoid removing an existing installation until they understand how doing so might affect saved progress. Keeping important data protected is a sensible precaution when changing applications or versions.</p>
+
+      <h2 id="tips">Tips for Enjoying BitLife More Effectively</h2>
+      <p>A few practical habits can make gameplay more enjoyable and help players explore different outcomes.</p>
+      <p><strong>Plan your character's goals:</strong> Decide whether the main objective is wealth, fame, family, education, or an unusual life story.</p>
+      <p><strong>Pay attention to education:</strong> Academic performance can influence access to certain careers and opportunities.</p>
+      <p><strong>Manage finances carefully:</strong> Consider income, spending, and long-term goals before making expensive purchases.</p>
+      <p><strong>Maintain relationships:</strong> Social decisions can influence personal events and the direction of a character's life.</p>
+      <p><strong>Experiment with different paths:</strong> Try alternative careers and lifestyle choices instead of repeating the same strategy every time.</p>
+      <p><strong>Read challenge requirements:</strong> Special challenges often involve specific conditions, so planning ahead can save time and reduce unnecessary mistakes.</p>
+      <p>These strategies provide a useful starting point for beginners while giving experienced players additional ways to approach familiar scenarios.</p>
+
+      <h2 id="troubleshooting">Common Problems and Troubleshooting</h2>
+      <p>Installation problems can occur when an application file is incomplete, incompatible, or conflicting with an existing version. If an APK fails to install, first check the device's available storage and confirm that the file matches the device's requirements.</p>
+      <p>If the game crashes or closes unexpectedly, the installed version may be outdated or incompatible. Restarting the device and checking for an official update may help identify the problem.</p>
+      <p>Missing premium features can indicate that a modified build does not include the advertised unlocks. Players should avoid assuming that every file described as a premium version offers identical functionality.</p>
+      <p>Security warnings should be treated seriously. Do not disable important protections or grant unnecessary permissions to force an application to work.</p>
+
+      <h2 id="conclusion">Conclusion</h2>
+      <p>BitLife offers a flexible life simulation experience built around personal decisions, career development, relationships, finances, and unexpected events. Its open-ended structure encourages players to explore different lifestyles and discover how small decisions can influence a character's future.</p>
+      <p>Understanding the available features, comparing official and modified editions, and checking device compatibility can help players make better-informed choices. Whether the goal is to build a successful career, accumulate wealth, develop relationships, or complete special challenges, thoughtful decisions remain central to enjoying the game.</p>
+      <p>Players should prioritize device security, protect their saved progress, and verify application information before installing unfamiliar files. Taking these precautions can help create a more reliable and enjoyable gaming experience.</p>
+    </article>
+
+    <aside class="sidebar" aria-label="Article sidebar">
+      <section class="sidebar-card">
+        <h3>About BitLife</h3>
+        <p>BitLife is a life simulation game where choices shape a character's relationships, career, finances, and life story.</p>
+        <a class="mini-cta" href="https://thebitlifemodapks.com/">Visit Website</a>
+      </section>
+      <section class="sidebar-card">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="#features">MOD APK Features</a></li>
+          <li><a href="#official-vs-mod">Official vs. MOD</a></li>
+          <li><a href="#compatibility">Compatibility & Safety</a></li>
+          <li><a href="#tips">Gameplay Tips</a></li>
+        </ul>
+      </section>
+      <section class="sidebar-card">
+        <h3>Before Installing</h3>
+        <ul>
+          <li>Check the file source and version.</li>
+          <li>Review requested app permissions.</li>
+          <li>Confirm device compatibility.</li>
+          <li>Protect saved game progress.</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">BitLife MOD APK</div>
+        <p>A reader-friendly guide to BitLife gameplay, career choices, character development, version compatibility, and Android app safety.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#article">Blog Article</a>
+          <a href="#features">MOD APK Features</a>
+          <a href="#tips">Gameplay Tips</a>
+        </div>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <div class="footer-links">
+          <a href="#compatibility">Compatibility & Safety</a>
+          <a href="#official-vs-mod">Official vs. Modified</a>
+          <a href="#conclusion">Conclusion</a>
+          <a href="https://thebitlifemodapks.com/">Website</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 BitLife MOD APK. All rights reserved.</span>
+      <span>Informational content for readers and gaming enthusiasts.</span>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '✕' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    }));
+  </script>
+</body>
+</html>
